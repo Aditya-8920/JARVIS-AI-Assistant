@@ -29,5 +29,5 @@ An advanced, Iron Man–inspired desktop autonomous assistant built with Python.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/JARVIS-Autonomous-AI.git
-   cd JARVIS-Autonomous-AI
+   git clone [https://github.com/Aditya-8920/JARVIS-AI-Assistant.git](https://github.com/Aditya-8920/JARVIS-AI-Assistant.git)
+   cd JARVIS-AI-Assistant
