@@ -15,9 +15,9 @@ if not os.path.exists(ADB_PATH):
 # CONTACTS LIST (Apne numbers yahan update karo)
 # ==========================================
 CONTACTS = {
-    "mom": "9971718288",
-    "stuti didi": "9311286878",
-    "home": "9876543210"
+    "mom": "9999999999",
+    "dad": "8888888888",
+    "home": "7777777777"
 }
 
 def run_adb(command):
