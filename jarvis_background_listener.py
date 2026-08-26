@@ -25,7 +25,7 @@ def start_continuous_wake_listener():
                     print(f"\n[WAKE WORD DETECTED]: {phrase} -> Launching Jarvis Session...")
                     # Launches Jarvis brain session in dedicated process
                     p = subprocess.Popen([EXEC, MAIN_BRAIN])
-                    p.wait() # Session khatam hone tak wait karega, fir wapas background listening
+                    p.wait() 
             except sr.UnknownValueError:
                 pass
             except Exception:

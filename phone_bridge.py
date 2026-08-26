@@ -12,7 +12,7 @@ if not os.path.exists(ADB_PATH):
     ADB_PATH = "adb"
 
 # ==========================================
-# CONTACTS LIST (Apne numbers yahan update karo)
+# CONTACTS LIST 
 # ==========================================
 CONTACTS = {
     "mom": "9999999999",
@@ -83,7 +83,7 @@ def play_youtube_on_phone(query):
     clean_q = query.strip()
     
     try:
-        # Step 1: Query ka exact top video ID nikal lo (Bypass search ads completely)
+        # Step 1: Fetch top Video ID(Bypass search ads completely)
         import urllib.request
         search_url = "https://www.youtube.com/results?search_query=" + urllib.parse.quote(clean_q)
         html = urllib.request.urlopen(search_url).read().decode()
@@ -91,7 +91,7 @@ def play_youtube_on_phone(query):
         
         if video_ids:
             top_video_id = video_ids[0]
-            # Step 2: Direct Video Link ko Android YouTube App me launch karo
+            # Step 2: Launch Direct Video Link on Android YouTube
             cmd = f'shell am start -a android.intent.action.VIEW -d "vnd.youtube:{top_video_id}" com.google.android.youtube'
             run_adb(cmd)
             return f"Playing {clean_q} on your phone's YouTube app, sir."
