@@ -177,17 +177,22 @@ def autonomous_brain(user_prompt):
         pywhatkit.playonyt(song)
         speak(f"Playing {song} on PC YouTube, sir.")
         return
-    if cmd.startswith("open chrome") or cmd == "chrome":
-        os.system("start chrome")
-        speak("Opening Google Chrome, sir.")
+
+    if cmd.startswith("open "):
+        app_target = cmd.replace("open ", "", 1).strip()
+        if assistant_tools:
+            speak(assistant_tools.open_app(app_target))
+        else:
+            os.system(f"start {app_target}")
+            speak(f"Opening {app_target}, sir.")
         return
-    if cmd.startswith("open notepad") or cmd == "notepad":
-        os.system("start notepad")
-        speak("Opening Notepad, sir.")
-        return
-    if cmd.startswith("open calc") or "calculator" in cmd:
-        os.system("start calc")
-        speak("Opening Calculator, sir.")
+
+    if cmd in ["chrome", "notepad", "calculator", "calc", "cmd", "spotify"]:
+        if assistant_tools:
+            speak(assistant_tools.open_app(cmd))
+        else:
+            os.system(f"start {cmd}")
+            speak(f"Opening {cmd}, sir.")
         return
 
     # 7. Conversational AI with Memory
@@ -241,7 +246,7 @@ def listen_microphone():
                         is_awake = False
                         continue
                         
-                    # Complete Shutdown command (agar script sach me band karni ho)
+                    # Complete Shutdown command
                     if any(word in user_text.lower() for word in ["power off", "terminate system", "shutdown"]):
                         stop_gestures()
                         speak("Shutting down core systems. Goodbye, sir.")

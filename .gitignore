@@ -3,3 +3,4 @@ __pycache__/
 *.mp3
 config.py
 .env
+my_contacts.py

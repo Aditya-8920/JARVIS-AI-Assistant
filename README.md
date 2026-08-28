@@ -1,33 +1,107 @@
-# ⚡ J.A.R.V.I.S. — Autonomous Multimodal AI Assistant
+⚡ J.A.R.V.I.S. — Autonomous Multimodal AI Assistant
+An Iron Man–inspired, autonomous desktop assistant designed for low-latency voice execution, computer vision gesture control, Android device bridging via ADB, and full desktop automation.
 
-An advanced, Iron Man–inspired desktop autonomous assistant built with Python. It integrates live voice directives via Groq LLM, Vision Pro style hand gesture tracking, ADB Android device bridge, and a custom futuristic dark-mode HUD.
+🌟 Core Capabilities
+Real-time Voice Intelligence: Autonomous intent parsing and conversational generation powered by Groq LLM with contextual memory.
 
----
+Vision Pro Gesture Tracking: Contactless UI navigation using MediaPipe and OpenCV (pinch-to-click, virtual drag, and smart scrolling).
 
-## 🌟 Key Features
+Android Hardware Bridge (ADB): SIM-routed hands-free cellular calls, mobile app triggers, direct YouTube streaming on phone, and device telemetry.
 
-* **Real-time Voice Engine:** Autonomous intent routing using Groq API and fast speech recognition.
-* **Vision Pro Gesture Control:** MediaPipe and OpenCV powered virtual cursor, scrolling, clicking, and window manipulation.
-* **Android Phone Bridge (ADB):** Direct hands-free mobile calls (SIM 1/2), app launching, phone YouTube streaming, and battery telemetry.
-* **Desktop Automation:** Multi-window switching, live system telemetry (CPU, RAM, Battery), screenshot utilities, and audio controls.
-* **Cyberpunk Desktop UI:** CustomTkinter dark-mode HUD dashboard with live conversation feed and system monitors.
+Desktop & Web Automation: Seamless media control, multi-window tiling, native/web application launcher (Spotify, Netflix, GitHub, etc.), and system diagnostics.
 
----
+Cyberpunk HUD Dashboard: CustomTkinter dark-mode graphical user interface featuring real-time conversation stream and resource monitoring.
 
-## 🛠 Tech Stack
+🛠 Tech Stack
+Core Language: Python 3.10+
 
-* **Language:** Python 3.10+
-* **Computer Vision:** OpenCV, MediaPipe
-* **LLM Engine:** Groq API (`llama-3.3-70b-versatile`)
-* **Voice Stack:** SpeechRecognition, pyttsx3
-* **GUI Framework:** CustomTkinter
-* **Hardware Bridge:** Android Debug Bridge (ADB), PyAutoGUI
+LLM Engine: Groq API (llama-3.1-8b-instant / llama-3.3-70b-versatile)
 
----
+Computer Vision: OpenCV, MediaPipe
 
-## 🚀 Quick Setup
+Speech Stack: Google Speech Recognition, Microsoft Edge TTS (edge-tts), Pygame
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Aditya-8920/JARVIS-AI-Assistant.git](https://github.com/Aditya-8920/JARVIS-AI-Assistant.git)
-   cd JARVIS-AI-Assistant
+Automation & Hardware Bridge: Android Debug Bridge (ADB), PyAutoGUI, Pyperclip
+
+GUI Engine: CustomTkinter
+
+🚀 Quick Setup & Installation
+1. Clone the Repository
+Bash
+git clone https://github.com/Aditya-8920/JARVIS-AI-Assistant.git
+cd JARVIS-AI-Assistant
+2. Set Up Virtual Environment
+Bash
+python -m venv jarvis_env
+.\jarvis_env\Scripts\activate
+3. Install Dependencies
+Bash
+pip install -r requirements.txt
+4. Configure Environment Variables
+Create a config.py file in the root project directory:
+
+Python
+GROQ_API_KEY = "your_actual_groq_api_key_here"
+5. Launch the Assistant
+Bash
+python jarvis_ui.py
+🎙 Complete Voice & Gesture Commands Reference
+📱 Android Phone Bridge (ADB)
+Call [Contact Name/Number] via SIM 1 / SIM 2 — Hands-free cellular calling via ADB.
+
+Play [Song/Video Name] on phone YouTube — Direct deep-link playback on the mobile YouTube application.
+
+Open WhatsApp / Camera / Instagram on phone — Launches corresponding apps on the target device.
+
+Phone battery / Mobile battery — Live battery level and charging telemetry of connected phone.
+
+Paste to phone — Transmits PC clipboard string directly to phone's active input field.
+
+🖐 Vision Pro Gesture Controls
+Turn on hand gestures / Start gesture — Spawns webcam HUD and starts tracking pipeline.
+
+Turn off hand gestures / Stop gesture — Safely terminates background tracking process.
+
+Supported Gestures:
+
+Index Finger Pinch / Tap: Virtual Cursor Click / Drag.
+
+Two Fingers Up / Down: Smooth Screen Scrolling.
+
+Open Palm / Fist: Minimize Active Window / Desktop HUD Toggle.
+
+🌐 Apps, Media & Web Controls
+Open Spotify / Netflix / Instagram / ChatGPT / GitHub — Directly opens web player/portal in browser.
+
+Open Chrome / Notepad / Calculator — Launches native Windows executable tools.
+
+Play [Song Name] — Searches and plays high-definition audio on PC YouTube.
+
+Volume up / Volume down / Mute — Step-by-step master audio adjustments.
+
+Switch tab / Next tab — Cycles active web browser tabs (Ctrl + Tab).
+
+Switch window / Switch app — Cycles running desktop applications (Alt + Tab).
+
+Close window / Close app — Terminates focused active application window (Alt + F4).
+
+Show desktop / Minimize all — Minimizes all open desktop windows (Win + D).
+
+Take screenshot — Captures primary display and saves image inside Pictures folder.
+
+Set a timer for [X] minutes — Asynchronous countdown timer with alert notification.
+
+⚡ System Diagnostics & State Management
+Hey Jarvis / Wake up — Wake word detection from standby.
+
+Go to sleep / Standby — Low-power background standby mode.
+
+Shutdown / Power off — Complete session termination.
+
+System report / CPU usage / Diagnostics — Real-time CPU, RAM, and thermals report.
+
+Laptop battery — PC battery level and power plug status.
+
+Weather — Live weather conditions and meteorological telemetry.
+
+Any Query — Direct contextual conversational AI responses.
