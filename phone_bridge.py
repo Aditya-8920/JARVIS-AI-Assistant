@@ -14,7 +14,7 @@ if not os.path.exists(ADB_PATH):
 # ==========================================
 # CONTACTS LIST 
 # ==========================================
-# Default Dummy numbers (GitHub ke liye)
+# Default Dummy numbers
 CONTACTS = {
     "mummy": "9999999999",
     "mom": "9999999999",
@@ -24,7 +24,7 @@ CONTACTS = {
     "dad": "7777777777"
 }
 
-# Agar local PC par private file exist karegi toh real numbers load honge
+
 try:
     from my_contacts import PRIVATE_CONTACTS
     CONTACTS.update(PRIVATE_CONTACTS)
