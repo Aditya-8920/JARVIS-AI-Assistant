@@ -62,7 +62,7 @@ python jarvis_ui.py
 
 ## 🎙 Complete Voice & Gesture Commands Reference
 
-###📱 Android Phone Bridge (ADB)
+<h3>📱 Android Phone Bridge (ADB)</h3>
 
 Call [Contact Name/Number] via SIM 1 / SIM 2 — Hands-free cellular calling via ADB.
 
@@ -75,7 +75,7 @@ Phone battery / Mobile battery — Live battery level and charging telemetry of 
 Paste to phone — Transmits PC clipboard string directly to phone's active input field.
 
 
-###🖐 Vision Pro Gesture Controls
+<h3>🖐 Vision Pro Gesture Controls</h3>
 
 Turn on hand gestures / Start gesture — Spawns webcam HUD and starts tracking pipeline.
 
