@@ -36,24 +36,29 @@ An Iron Man–inspired, autonomous desktop assistant designed for low-latency vo
 ```bash
 git clone [https://github.com/Aditya-8920/JARVIS-AI-Assistant.git](https://github.com/Aditya-8920/JARVIS-AI-Assistant.git)
 cd JARVIS-AI-Assistant
+```
 
 ### 2. Set Up Virtual Environment
 ```bash
 python -m venv jarvis_env
 .\jarvis_env\Scripts\activate
+```
 
 ### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 4. Configure Environment Variables
 Create a config.py file in the root project directory:
 ```bash
 GROQ_API_KEY = "your_actual_groq_api_key_here"
+```
 
 ### 5. Launch the Assistant
 ```bash
 python jarvis_ui.py
+```
 
 🎙 Complete Voice & Gesture Commands Reference
 📱 Android Phone Bridge (ADB)
