@@ -61,6 +61,7 @@ python jarvis_ui.py
 ```
 
 ## 🎙 Complete Voice & Gesture Commands Reference
+
 ###📱 Android Phone Bridge (ADB)
 
 Call [Contact Name/Number] via SIM 1 / SIM 2 — Hands-free cellular calling via ADB.
@@ -72,6 +73,7 @@ Open WhatsApp / Camera / Instagram on phone — Launches corresponding apps on t
 Phone battery / Mobile battery — Live battery level and charging telemetry of connected phone.
 
 Paste to phone — Transmits PC clipboard string directly to phone's active input field.
+
 
 ###🖐 Vision Pro Gesture Controls
 
@@ -86,6 +88,7 @@ Index Finger Pinch / Tap: Virtual Cursor Click / Drag.
 Two Fingers Up / Down: Smooth Screen Scrolling.
 
 Open Palm / Fist: Minimize Active Window / Desktop HUD Toggle.
+
 
 ###🌐 Apps, Media & Web Controls
 
@@ -108,6 +111,7 @@ Show desktop / Minimize all — Minimizes all open desktop windows (Win + D).
 Take screenshot — Captures primary display and saves image inside Pictures folder.
 
 Set a timer for [X] minutes — Asynchronous countdown timer with alert notification.
+
 
 ###⚡ System Diagnostics & State Management
 
