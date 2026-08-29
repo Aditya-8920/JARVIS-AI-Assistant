@@ -34,7 +34,7 @@ An Iron Man–inspired, autonomous desktop assistant designed for low-latency vo
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Aditya-8920/JARVIS-AI-Assistant.git](https://github.com/Aditya-8920/JARVIS-AI-Assistant.git)
+git clone https://github.com/adii-8920/JARVIS-AI-Assistant.git
 cd JARVIS-AI-Assistant
 ```
 
