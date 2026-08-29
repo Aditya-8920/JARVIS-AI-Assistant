@@ -90,7 +90,7 @@ Two Fingers Up / Down: Smooth Screen Scrolling.
 Open Palm / Fist: Minimize Active Window / Desktop HUD Toggle.
 
 
-###🌐 Apps, Media & Web Controls
+<h3>🌐 Apps, Media & Web Controls</h3>
 
 Open Spotify / Netflix / Instagram / ChatGPT / GitHub — Directly opens web player/portal in browser.
 
@@ -113,7 +113,7 @@ Take screenshot — Captures primary display and saves image inside Pictures fol
 Set a timer for [X] minutes — Asynchronous countdown timer with alert notification.
 
 
-###⚡ System Diagnostics & State Management
+<h3>⚡ System Diagnostics & State Management</h3>
 
 Hey Jarvis / Wake up — Wake word detection from standby.
 
