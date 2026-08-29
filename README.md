@@ -60,8 +60,8 @@ GROQ_API_KEY = "your_actual_groq_api_key_here"
 python jarvis_ui.py
 ```
 
-🎙 Complete Voice & Gesture Commands Reference
-📱 Android Phone Bridge (ADB)
+## 🎙 Complete Voice & Gesture Commands Reference
+###📱 Android Phone Bridge (ADB)
 Call [Contact Name/Number] via SIM 1 / SIM 2 — Hands-free cellular calling via ADB.
 
 Play [Song/Video Name] on phone YouTube — Direct deep-link playback on the mobile YouTube application.
@@ -72,7 +72,7 @@ Phone battery / Mobile battery — Live battery level and charging telemetry of 
 
 Paste to phone — Transmits PC clipboard string directly to phone's active input field.
 
-🖐 Vision Pro Gesture Controls
+###🖐 Vision Pro Gesture Controls
 Turn on hand gestures / Start gesture — Spawns webcam HUD and starts tracking pipeline.
 
 Turn off hand gestures / Stop gesture — Safely terminates background tracking process.
@@ -85,7 +85,7 @@ Two Fingers Up / Down: Smooth Screen Scrolling.
 
 Open Palm / Fist: Minimize Active Window / Desktop HUD Toggle.
 
-🌐 Apps, Media & Web Controls
+###🌐 Apps, Media & Web Controls
 Open Spotify / Netflix / Instagram / ChatGPT / GitHub — Directly opens web player/portal in browser.
 
 Open Chrome / Notepad / Calculator — Launches native Windows executable tools.
@@ -106,7 +106,7 @@ Take screenshot — Captures primary display and saves image inside Pictures fol
 
 Set a timer for [X] minutes — Asynchronous countdown timer with alert notification.
 
-⚡ System Diagnostics & State Management
+###⚡ System Diagnostics & State Management
 Hey Jarvis / Wake up — Wake word detection from standby.
 
 Go to sleep / Standby — Low-power background standby mode.
